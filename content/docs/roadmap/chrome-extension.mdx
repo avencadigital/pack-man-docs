@@ -1,0 +1,219 @@
+---
+title: Chrome Extension Roadmap
+description: Future plans for the Pack-Man browser extension
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+# Chrome Extension Roadmap
+
+Planned features and improvements for the Pack-Man browser extension.
+
+## Q1 2025 - Cross-browser & Enhanced UX
+
+### 🦊 Firefox Support
+**Status**: In Development | **Priority**: High
+
+- **WebExtensions Port** - Adapt to Firefox WebExtensions API
+- **Firefox Add-ons Store** - Publish to Mozilla Add-ons
+- **Cross-browser Compatibility** - Shared codebase for Chrome and Firefox
+- **Feature Parity** - All Chrome features available on Firefox
+- **Automated Testing** - Test suite for both browsers
+
+### 🎨 Badge Customization
+**Status**: Planned | **Priority**: Medium
+
+- **Color Themes** - Choose from preset color schemes
+- **Custom Colors** - Define your own badge colors
+- **Badge Styles** - Flat, gradient, or outlined styles
+- **Position Options** - Configure badge placement
+- **Size Options** - Small, medium, or large badges
+
+### ⚡ Performance Improvements
+**Status**: Planned | **Priority**: High
+
+- **Lazy Loading** - Load badges only when visible
+- **Optimized Caching** - Reduce memory footprint
+- **Background Sync** - Efficient background updates
+- **Reduced API Calls** - Smart request batching
+- **Faster Badge Injection** - Improved DOM manipulation
+
+---
+
+## Q2 2025 - Platform Expansion
+
+### 🦊 GitLab Support
+**Status**: Planned | **Priority**: High
+
+- **GitLab Integration** - Badge injection on GitLab.com
+- **Self-hosted GitLab** - Support for GitLab instances
+- **GitLab API** - Direct API integration
+- **Merge Request Integration** - Show badges in MRs
+- **GitLab CI Integration** - Link to pipeline results
+
+### 🪣 Bitbucket Support
+**Status**: Planned | **Priority**: Medium
+
+- **Bitbucket Cloud** - Badge injection on Bitbucket.org
+- **Bitbucket Server** - Support for self-hosted instances
+- **Pull Request Integration** - Show badges in PRs
+- **Bitbucket Pipelines** - Link to pipeline results
+- **Repository Settings** - Configure per-repository
+
+### 🔔 Dependency Alerts
+**Status**: Planned | **Priority**: Medium
+
+- **Desktop Notifications** - Alert for outdated dependencies
+- **Security Alerts** - Notify about vulnerabilities
+- **Configurable Thresholds** - Set alert criteria
+- **Notification History** - View past alerts
+- **Snooze Options** - Temporarily dismiss alerts
+
+---
+
+## Q3 2025 - Advanced Features
+
+### 📊 Comparison View
+**Status**: Planned | **Priority**: Low
+
+- **Branch Comparison** - Compare dependencies across branches
+- **Fork Comparison** - Compare with upstream repository
+- **Historical Comparison** - Compare with previous commits
+- **Side-by-side View** - Visual diff of dependencies
+- **Export Comparison** - Export comparison as report
+
+### 📤 Export Options
+**Status**: Planned | **Priority**: Low
+
+- **JSON Export** - Export analysis as JSON
+- **CSV Export** - Export for spreadsheet analysis
+- **PDF Report** - Generate PDF reports
+- **Markdown Export** - Export as markdown table
+- **Share Links** - Generate shareable analysis links
+
+### 🔍 Advanced Filtering
+**Status**: Planned | **Priority**: Low
+
+- **Filter by Status** - Show only outdated/up-to-date
+- **Filter by Type** - Dependencies vs devDependencies
+- **Search Packages** - Quick search in dependency list
+- **Sort Options** - Sort by name, version, status
+- **Saved Filters** - Save frequently used filters
+
+---
+
+## Q4 2025 - Enterprise & Integration
+
+### 🏢 Enterprise Features
+**Status**: Research | **Priority**: Medium
+
+- **Custom API Endpoints** - Configure multiple endpoints
+- **SSO Integration** - Enterprise authentication
+- **Policy Enforcement** - Enforce dependency policies
+- **Audit Logging** - Track all extension actions
+- **Centralized Management** - Admin console for teams
+
+### 🔗 IDE Integration
+**Status**: Research | **Priority**: Low
+
+- **VS Code Integration** - Link to VS Code extension
+- **JetBrains Integration** - Link to IntelliJ/WebStorm
+- **Open in Editor** - One-click open in local editor
+- **Sync Settings** - Sync with IDE extension settings
+- **Unified Experience** - Consistent UX across tools
+
+### 📱 Mobile Support
+**Status**: Research | **Priority**: Low
+
+- **Mobile Browser Support** - Kiwi Browser, Firefox Mobile
+- **Touch Optimization** - Touch-friendly popup interface
+- **Responsive Design** - Adapt to mobile screens
+- **Offline Mode** - Work without internet connection
+- **Progressive Web App** - PWA version for mobile
+
+---
+
+## Community Requests
+
+### Most Voted Features
+
+1. **Firefox Support** (243 votes) - Port to Firefox browser
+2. **GitLab Support** (156 votes) - Add GitLab integration
+3. **Offline Mode** (98 votes) - Cache for offline viewing
+4. **Dark Mode** (87 votes) - Native dark theme
+5. **Keyboard Shortcuts** (64 votes) - More keyboard shortcuts
+
+<Callout type="info">
+Vote on features in our [GitHub Discussions](https://github.com/yourusername/pack-man/discussions/categories/extension-features)!
+</Callout>
+
+---
+
+## Technical Improvements
+
+### Code Quality
+- Increase test coverage to 85%+
+- Add E2E tests with Playwright
+- Improve error handling
+- Refactor legacy code
+
+### Performance
+- Reduce bundle size by 30%
+- Optimize memory usage
+- Faster badge rendering
+- Efficient background processing
+
+### Security
+- Regular security audits
+- Dependency updates
+- CSP hardening
+- Permission minimization
+
+---
+
+## Browser Compatibility
+
+### Current Support
+- ✅ Chrome 88+
+- ✅ Edge 88+
+- ✅ Brave
+- ✅ Opera
+- ✅ Vivaldi
+
+### Planned Support
+- 🚧 Firefox 91+ (Q1 2025)
+- 📋 Safari 15+ (Q3 2025)
+- 📋 Mobile browsers (Q4 2025)
+
+---
+
+## Installation & Distribution
+
+### Current
+- Chrome Web Store
+- Manual installation (unpacked)
+
+### Planned
+- Firefox Add-ons Store (Q1 2025)
+- Edge Add-ons Store (Q2 2025)
+- Opera Add-ons Store (Q2 2025)
+- Enterprise distribution (Q4 2025)
+
+---
+
+## How to Influence the Roadmap
+
+1. **Vote on Features** - Upvote in GitHub Discussions
+2. **Submit Ideas** - Create feature requests
+3. **Beta Testing** - Join early access program
+4. **Contribute Code** - Submit pull requests
+5. **Sponsor Development** - Support via Buy Me a Coffee
+
+---
+
+## Support
+
+- 📖 [Extension Documentation](/docs/extensions/chrome)
+- 🐛 [Report Issues](https://github.com/yourusername/pack-man/issues)
+- 💬 [Discussions](https://github.com/yourusername/pack-man/discussions)
+- ⭐ [Rate on Chrome Web Store](https://chrome.google.com/webstore)

@@ -1,0 +1,279 @@
+---
+title: VS Code Extension Roadmap
+description: Future plans for the Pack-Man VS Code extension
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+# VS Code Extension Roadmap
+
+Planned features and development timeline for the Pack-Man extension for Visual Studio Code.
+
+<Callout type="warn">
+The VS Code extension is currently in active development. Timeline estimates are subject to change.
+</Callout>
+
+## Q1 2025 - Alpha Release
+
+### 🎯 Core Functionality
+**Status**: In Development | **Priority**: Critical
+
+- **File Detection** - Auto-detect package.json, requirements.txt, pubspec.yaml
+- **Basic Analysis** - Analyze dependencies on command
+- **Status Bar** - Show dependency health in status bar
+- **Command Palette** - Access features via commands
+- **npm Support** - Full support for npm packages
+
+### 🎨 Basic UI
+**Status**: In Development | **Priority**: High
+
+- **Tree View** - Sidebar view for dependencies
+- **Status Indicators** - Color-coded status icons
+- **Quick Actions** - Basic update commands
+- **Output Channel** - Logging and debug information
+- **Welcome View** - Onboarding for new users
+
+### ⚙️ Configuration
+**Status**: Planned | **Priority**: High
+
+- **Settings** - Basic extension settings
+- **API Endpoint** - Configure Pack-Man API URL
+- **Auto-refresh** - Enable/disable auto-refresh
+- **Cache Settings** - Configure cache behavior
+- **GitHub Token** - Store GitHub token securely
+
+---
+
+## Q2 2025 - Beta Release
+
+### 🎨 Enhanced UI
+**Status**: Planned | **Priority**: High
+
+- **Inline Decorations** - Show status in dependency files
+- **CodeLens Actions** - Quick actions above dependencies
+- **Hover Information** - Package details on hover
+- **Webview Panel** - Rich analysis results view
+- **Progress Indicators** - Visual feedback for operations
+
+### 📦 Multi-format Support
+**Status**: Planned | **Priority**: High
+
+- **pip Support** - Python requirements.txt analysis
+- **pub Support** - Dart/Flutter pubspec.yaml analysis
+- **Auto-detection** - Detect file type automatically
+- **Multi-file Projects** - Handle multiple dependency files
+- **Workspace Support** - Multi-root workspace support
+
+### 🔄 Auto-refresh
+**Status**: Planned | **Priority**: Medium
+
+- **On Save** - Refresh analysis on file save
+- **On Focus** - Refresh when file gains focus
+- **Periodic Refresh** - Configurable auto-refresh interval
+- **Smart Refresh** - Only refresh when needed
+- **Background Refresh** - Non-blocking updates
+
+---
+
+## Q3 2025 - Stable Release
+
+### 🚀 Advanced Features
+**Status**: Planned | **Priority**: High
+
+- **Quick Fixes** - One-click dependency updates
+- **Bulk Updates** - Update multiple packages at once
+- **Version Picker** - Choose specific versions to update
+- **Diff Preview** - Preview changes before updating
+- **Rollback** - Undo dependency updates
+
+### 🔗 Integration
+**Status**: Planned | **Priority**: Medium
+
+- **Terminal Integration** - Run commands in integrated terminal
+- **Git Integration** - Commit dependency updates
+- **Task Integration** - Create tasks for updates
+- **Source Control** - Show changes in SCM view
+- **Testing Integration** - Run tests after updates
+
+### 🔐 Security
+**Status**: Planned | **Priority**: High
+
+- **Vulnerability Scanning** - Check for security issues
+- **Security Badges** - Show security status
+- **CVE Information** - Display vulnerability details
+- **Fix Suggestions** - Recommend secure versions
+- **Security Alerts** - Notify about critical issues
+
+---
+
+## Q4 2025 - Advanced Features
+
+### 📊 Dependency Graph
+**Status**: Planned | **Priority**: Medium
+
+- **Visual Graph** - Interactive dependency tree
+- **Conflict Detection** - Highlight version conflicts
+- **Circular Dependencies** - Detect circular deps
+- **Size Analysis** - Show bundle size impact
+- **Export Graph** - Export as image or JSON
+
+### 🏢 Monorepo Support
+**Status**: Planned | **Priority**: Medium
+
+- **Workspace Detection** - Auto-detect monorepo structure
+- **Cross-package Analysis** - Analyze all packages
+- **Duplicate Detection** - Find duplicate dependencies
+- **Version Consistency** - Check version mismatches
+- **Workspace Commands** - Bulk operations across workspace
+
+### 🤖 Automation
+**Status**: Planned | **Priority**: Low
+
+- **Auto-update** - Automatically update dependencies
+- **Update Policies** - Define update rules
+- **Scheduled Updates** - Run updates on schedule
+- **PR Creation** - Create PRs for updates (GitHub)
+- **CI Integration** - Trigger CI on updates
+
+---
+
+## Future Considerations
+
+### 🎯 Advanced Analysis
+**Status**: Research | **Priority**: Low
+
+- **License Compliance** - Check license compatibility
+- **Breaking Changes** - Detect breaking changes
+- **Deprecation Warnings** - Warn about deprecated packages
+- **Maintenance Score** - Assess package health
+- **Alternative Suggestions** - Recommend alternatives
+
+### 🔌 Extensibility
+**Status**: Research | **Priority**: Low
+
+- **Extension API** - Allow other extensions to integrate
+- **Custom Parsers** - Support custom file formats
+- **Plugin System** - Extend functionality with plugins
+- **Custom Commands** - Define custom update commands
+- **Webhooks** - Trigger external actions
+
+### 👥 Collaboration
+**Status**: Research | **Priority**: Low
+
+- **Team Settings** - Share settings across team
+- **Shared Policies** - Enforce team update policies
+- **Activity Feed** - Track team dependency changes
+- **Comments** - Collaborate on dependency decisions
+- **Approval Workflow** - Require approval for updates
+
+---
+
+## Community Requests
+
+### Most Voted Features
+
+1. **Quick Fixes** (187 votes) - One-click dependency updates
+2. **Security Scanning** (156 votes) - Vulnerability detection
+3. **Dependency Graph** (134 votes) - Visual dependency tree
+4. **Monorepo Support** (98 votes) - Workspace analysis
+5. **Auto-update** (87 votes) - Automated dependency updates
+
+<Callout type="info">
+Vote on features in our [GitHub Discussions](https://github.com/yourusername/pack-man/discussions/categories/vscode-features)!
+</Callout>
+
+---
+
+## Technical Details
+
+### Architecture
+- **Language**: TypeScript
+- **Framework**: VS Code Extension API
+- **API Client**: Axios with retry logic
+- **Parser**: Custom parsers for each format
+- **Cache**: VS Code Memento API
+- **Testing**: Jest + VS Code Test Runner
+
+### Performance Goals
+- Analysis < 2 seconds for typical projects
+- UI updates < 100ms
+- Memory usage < 50MB
+- Startup time < 500ms
+- No blocking operations
+
+### Compatibility
+- VS Code 1.85.0+
+- Node.js 18+
+- Windows, macOS, Linux
+- VS Code Web (limited support)
+- Codespaces support
+
+---
+
+## Development Milestones
+
+### Phase 1: Foundation (Current)
+- ✅ Extension scaffolding
+- ✅ API client implementation
+- 🚧 Basic file parsing
+- 🚧 Command registration
+- 📋 Tree view provider
+
+### Phase 2: Alpha (Q1 2025)
+- 📋 Complete npm support
+- 📋 Status bar integration
+- 📋 Basic tree view
+- 📋 Command palette commands
+- 📋 Settings implementation
+
+### Phase 3: Beta (Q2 2025)
+- 📋 Multi-format support
+- 📋 Inline decorations
+- 📋 CodeLens actions
+- 📋 Hover information
+- 📋 Auto-refresh
+
+### Phase 4: Stable (Q3 2025)
+- 📋 Quick fixes
+- 📋 Security scanning
+- 📋 Git integration
+- 📋 Performance optimization
+- 📋 Comprehensive testing
+
+### Phase 5: Advanced (Q4 2025)
+- 📋 Dependency graph
+- 📋 Monorepo support
+- 📋 Automation features
+- 📋 Extension API
+- 📋 Team features
+
+---
+
+## How to Get Involved
+
+### Early Access
+1. Star the [GitHub repository](https://github.com/yourusername/pack-man)
+2. Join our [Discord community](https://discord.gg/packman)
+3. Sign up for [alpha testing](https://packman.dev/alpha)
+4. Follow development updates
+
+### Contributing
+- 🔧 [Contributing Guide](https://github.com/yourusername/pack-man/blob/main/CONTRIBUTING.md)
+- 💬 [Join Discussions](https://github.com/yourusername/pack-man/discussions)
+- 🐛 [Report Issues](https://github.com/yourusername/pack-man/issues)
+- 📖 [Development Docs](https://packman.dev/docs/development)
+
+### Support Development
+- ⭐ Star on GitHub
+- 🐦 Share on Twitter
+- ☕ [Buy Me a Coffee](https://buymeacoffee.com/packman)
+- 📧 [Subscribe to Newsletter](https://packman.dev/newsletter)
+
+---
+
+## Support
+
+- 📖 [VS Code Extension Docs](/docs/extensions/vscode)
+- 🐛 [Report Issues](https://github.com/yourusername/pack-man/issues)
+- 💬 [Discussions](https://github.com/yourusername/pack-man/discussions)
+- 📧 [Email Support](mailto:support@packman.dev)

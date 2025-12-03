@@ -1,0 +1,9 @@
+{
+    "title": "Roadmap",
+    "pages": [
+        "index",
+        "api",
+        "chrome-extension",
+        "vscode-extension"
+    ]
+}

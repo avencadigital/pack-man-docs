@@ -1,0 +1,9 @@
+{
+    "title": "Changelog",
+    "pages": [
+        "index",
+        "api",
+        "chrome-extension",
+        "vscode-extension"
+    ]
+}

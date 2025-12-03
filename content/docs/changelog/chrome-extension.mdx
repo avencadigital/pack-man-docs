@@ -1,0 +1,135 @@
+---
+title: Chrome Extension Changelog
+description: Updates and improvements to the Pack-Man Chrome extension
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+# Chrome Extension Changelog
+
+All notable changes to the Pack-Man browser extension for Chrome and Chromium-based browsers.
+
+## Version 1.2.0 - December 2024
+
+### 🎉 New Features
+
+#### Custom API Endpoint
+- **Self-hosted Support** - Configure custom Pack-Man API endpoints
+- **Settings UI** - Easy-to-use options page for configuration
+- **Endpoint Validation** - Validates custom endpoints before saving
+- **Default Fallback** - Falls back to official API if custom endpoint fails
+
+#### Support Integration
+- **Buy Me a Coffee Button** - Built-in support button in popup
+- **One-click Donations** - Direct link to support development
+- **Non-intrusive** - Subtle placement that doesn't interfere with functionality
+
+### 🔧 Improvements
+
+#### Caching System
+- **Separate Cache TTLs** - Success (5 minutes) vs Error (2 minutes)
+- **Smart Invalidation** - Automatic cache refresh on settings change
+- **Memory Efficient** - Optimized storage usage
+- **Background Sync** - Updates cache in background
+
+#### Error Handling
+- **Retry Logic** - Automatic retry with exponential backoff
+- **Better Messages** - Clear, actionable error descriptions
+- **Debug Mode** - Enhanced logging for troubleshooting
+- **Graceful Degradation** - Continues working with partial failures
+
+### 🐛 Bug Fixes
+
+- Fixed authentication header format (Bearer token)
+- Resolved badge update race conditions
+- Improved GitHub API rate limit handling
+- Fixed popup rendering on slow connections
+- Corrected cache key generation for private repos
+
+### 🔐 Security
+
+- **Token Encryption** - Secure storage of GitHub tokens
+- **CSP Compliance** - Content Security Policy enforcement
+- **Minimal Permissions** - Only requests necessary permissions
+- **No Data Collection** - Zero telemetry or tracking
+
+---
+
+## Version 1.1.0 - November 2024
+
+### Added
+- **Badge Customization** - Choose badge colors and styles
+- **Keyboard Shortcuts** - Quick access with Ctrl+Shift+P
+- **Context Menu** - Right-click to analyze repository
+- **Notification System** - Desktop notifications for analysis completion
+
+### Improved
+- **Faster Badge Updates** - Reduced latency by 40%
+- **Better Icon Design** - Higher contrast for visibility
+- **Popup Performance** - Optimized rendering speed
+- **Memory Usage** - Reduced background memory footprint
+
+### Fixed
+- Badge positioning on GitHub Enterprise
+- Popup width on different screen sizes
+- Icon visibility in dark mode
+- Race condition in badge injection
+
+---
+
+## Version 1.0.0 - October 2024
+
+### Initial Release
+
+#### Core Features
+- **GitHub Badge Integration** - Adds Pack-Man badge to repository pages
+- **One-click Analysis** - Click badge to analyze dependencies
+- **Package Manager Detection** - Auto-detects npm, pip, pub projects
+- **Visual Indicators** - Color-coded badges for dependency health
+- **Popup Interface** - Quick summary without leaving GitHub
+
+#### Technical
+- Manifest V3 compliance
+- Chrome Storage API for settings
+- GitHub API integration
+- Efficient DOM manipulation
+- Minimal performance impact
+
+#### Supported Platforms
+- Chrome 88+
+- Edge 88+
+- Brave
+- Opera
+- Any Chromium-based browser
+
+---
+
+## Upcoming Features
+
+<Callout type="info">
+Check the [Chrome Extension Roadmap](/docs/roadmap/chrome-extension) for planned features!
+</Callout>
+
+### In Development
+- **Firefox Support** - Port to Firefox with WebExtensions
+- **Badge Customization** - More styling options
+- **Offline Mode** - Cache analysis results for offline viewing
+
+### Planned
+- **GitLab Support** - Extend to GitLab repositories
+- **Bitbucket Support** - Extend to Bitbucket repositories
+- **Dependency Alerts** - Notifications for outdated packages
+- **Comparison View** - Compare dependencies across branches
+- **Export Options** - Export analysis results as JSON/CSV
+
+---
+
+## Installation
+
+Install from [Chrome Web Store](https://chrome.google.com/webstore) or load unpacked for development.
+
+## Support
+
+- 📖 [Extension Documentation](/docs/extensions/chrome)
+- 🐛 [Report Issues](https://github.com/yourusername/pack-man/issues)
+- ⭐ [Rate on Chrome Web Store](https://chrome.google.com/webstore)

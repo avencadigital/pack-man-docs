@@ -1,0 +1,172 @@
+---
+title: VS Code Extension Changelog
+description: Updates and improvements to the Pack-Man VS Code extension
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+# VS Code Extension Changelog
+
+All notable changes to the Pack-Man extension for Visual Studio Code.
+
+<Callout type="warn">
+The VS Code extension is currently in development. This changelog will be updated as features are released.
+</Callout>
+
+## [Unreleased] - In Development
+
+### 🚧 Planned Features
+
+#### Core Functionality
+- **In-editor Analysis** - Analyze dependencies without leaving VS Code
+- **File Detection** - Automatic detection of package.json, requirements.txt, pubspec.yaml
+- **Inline Decorations** - Show package status directly in dependency files
+- **Quick Actions** - CodeLens actions for updating packages
+- **Status Bar** - Real-time dependency health indicator
+
+#### User Experience
+- **Command Palette** - Access all features via commands
+- **Tree View** - Dedicated sidebar for dependency management
+- **Hover Information** - Package details on hover
+- **Auto-refresh** - Updates on file save
+- **Multi-root Support** - Works with workspace folders
+
+#### Integration
+- **Terminal Integration** - Run update commands directly
+- **Git Integration** - Track dependency changes
+- **Task Integration** - Create tasks for dependency updates
+- **Settings Sync** - Sync configuration across devices
+
+---
+
+## Upcoming Releases
+
+### Version 0.1.0 - Alpha (Q1 2025)
+
+**Target Features:**
+- Basic dependency file analysis
+- Status bar integration
+- Command palette commands
+- Simple tree view
+- npm package support
+
+**Technical:**
+- VS Code API 1.85+
+- TypeScript implementation
+- Pack-Man API integration
+- Local caching
+
+### Version 0.2.0 - Beta (Q2 2025)
+
+**Planned Additions:**
+- pip and pub support
+- Inline decorations
+- CodeLens actions
+- Hover information
+- Auto-refresh on save
+
+### Version 1.0.0 - Stable (Q3 2025)
+
+**Full Feature Set:**
+- All package managers
+- Complete UI integration
+- Performance optimizations
+- Comprehensive settings
+- Extension API for integrations
+
+---
+
+## Development Roadmap
+
+<Callout type="info">
+Check the [VS Code Extension Roadmap](/docs/roadmap/vscode-extension) for detailed plans and vote on features!
+</Callout>
+
+### Phase 1: Foundation (Current)
+- Extension scaffolding
+- API client implementation
+- Basic file parsing
+- Command registration
+
+### Phase 2: Core Features
+- Dependency analysis
+- Status indicators
+- Tree view implementation
+- Command palette integration
+
+### Phase 3: Enhanced UX
+- Inline decorations
+- CodeLens actions
+- Hover providers
+- Quick fixes
+
+### Phase 4: Advanced Features
+- Monorepo support
+- Security scanning
+- Dependency graph
+- Update automation
+
+### Phase 5: Polish & Release
+- Performance optimization
+- Comprehensive testing
+- Documentation
+- Marketplace publication
+
+---
+
+## Technical Details
+
+### Requirements
+- VS Code 1.85.0 or higher
+- Node.js 18+ (for development)
+- Pack-Man API access
+
+### Architecture
+- **Language**: TypeScript
+- **Framework**: VS Code Extension API
+- **API Client**: Axios
+- **Parser**: Custom parsers for each format
+- **Cache**: VS Code Memento API
+
+### Extension Capabilities
+- File system access
+- Workspace folder access
+- Command registration
+- Tree view provider
+- Decoration provider
+- Hover provider
+- CodeLens provider
+
+---
+
+## Contributing
+
+The VS Code extension is open for contributions! Areas where help is needed:
+
+- **Parser Development** - Improve file parsing accuracy
+- **UI/UX Design** - Design tree view and decorations
+- **Testing** - Write unit and integration tests
+- **Documentation** - Create user guides and API docs
+
+See our [Contributing Guide](https://github.com/yourusername/pack-man/blob/main/CONTRIBUTING.md) for details.
+
+---
+
+## Stay Updated
+
+- 📖 [VS Code Extension Docs](/docs/extensions/vscode)
+- 🐛 [Report Issues](https://github.com/yourusername/pack-man/issues)
+- 💬 [Join Discussions](https://github.com/yourusername/pack-man/discussions)
+- 📧 [Subscribe to Updates](https://packman.dev/newsletter)
+
+---
+
+## Early Access
+
+Interested in testing the alpha version? Join our early access program:
+
+1. Star the [GitHub repository](https://github.com/yourusername/pack-man)
+2. Join our [Discord community](https://discord.gg/packman)
+3. Sign up for [alpha testing](https://packman.dev/alpha)
+
+We'll notify you when the first alpha release is available!

@@ -6,6 +6,8 @@
         "guides",
         "extensions",
         "api",
-        "architecture"
+        "architecture",
+        "changelog",
+        "roadmap"
     ]
 }
