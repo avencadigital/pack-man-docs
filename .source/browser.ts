@@ -1,0 +1,12 @@
+// @ts-nocheck
+import { browser } from 'fumadocs-mdx/runtime/browser';
+import type * as Config from '../source.config';
+
+const create = browser<typeof Config, import("fumadocs-mdx/runtime/types").InternalTypeConfig & {
+  DocData: {
+  }
+}>();
+const browserCollections = {
+  docs: create.doc("docs", {"changelog.mdx": () => import("../content/docs/changelog.mdx?collection=docs"), "index.mdx": () => import("../content/docs/index.mdx?collection=docs"), "api/analyze-packages.mdx": () => import("../content/docs/api/analyze-packages.mdx?collection=docs"), "api/health.mdx": () => import("../content/docs/api/health.mdx?collection=docs"), "api/index.mdx": () => import("../content/docs/api/index.mdx?collection=docs"), "architecture/overview.mdx": () => import("../content/docs/architecture/overview.mdx?collection=docs"), "extensions/chrome.mdx": () => import("../content/docs/extensions/chrome.mdx?collection=docs"), "extensions/overview.mdx": () => import("../content/docs/extensions/overview.mdx?collection=docs"), "extensions/vscode.mdx": () => import("../content/docs/extensions/vscode.mdx?collection=docs"), "getting-started/github-token.mdx": () => import("../content/docs/getting-started/github-token.mdx?collection=docs"), "getting-started/introduction.mdx": () => import("../content/docs/getting-started/introduction.mdx?collection=docs"), "getting-started/quick-start.mdx": () => import("../content/docs/getting-started/quick-start.mdx?collection=docs"), "getting-started/supported-formats.mdx": () => import("../content/docs/getting-started/supported-formats.mdx?collection=docs"), "guides/analyzing-dependencies.mdx": () => import("../content/docs/guides/analyzing-dependencies.mdx?collection=docs"), "guides/github-integration.mdx": () => import("../content/docs/guides/github-integration.mdx?collection=docs"), "guides/troubleshooting.mdx": () => import("../content/docs/guides/troubleshooting.mdx?collection=docs"), "guides/understanding-results.mdx": () => import("../content/docs/guides/understanding-results.mdx?collection=docs"), "guides/updating-packages.mdx": () => import("../content/docs/guides/updating-packages.mdx?collection=docs"), }),
+};
+export default browserCollections;
