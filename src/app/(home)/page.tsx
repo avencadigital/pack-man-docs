@@ -84,7 +84,7 @@ export default function HomePage() {
               className="inline-flex items-center justify-center px-8 py-3 text-lg rounded-full border bg-background hover:bg-accent font-medium transition-all hover:scale-105"
             >
               <Code className="w-5 h-5 mr-2" />
-              API Reference
+              API
             </Link>
           </div>
 
